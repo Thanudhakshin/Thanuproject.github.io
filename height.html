@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="loancalculator.css">
+    <link rel = "icon" href="logo.jpeg">
+    <title>Thanu Project</title>
+</head>
+<body>
+  <div class="topnav">
+    <a class="navigators"  onclick="loannavigate()">Loan Calculator</a>
+    <a class="navigators" onclick="bmicalculator()">BMI Calculator</a>
+    <a class="navigators">Height Calculator</a>
+    </div>
+      
+      <div style="padding-left:16px">
+
+        <div class="main-div">
+          <div id="loancal">
+            <div class="heading">
+              <h1>Height Calculator</h1>
+          </div>
+                <form action="" id="calculator">
+                  <div class="text-fields">
+                    <div class="height">
+                    <label class="afeet_text" for="feet">Feet:</label><input type="number" class="amount_text" id="feet"><br>
+                    </div>
+                    <div class="height">
+                    <label class="amount_text" for="inches">Inches:</label><input type="number" class="amount_text" id="inches"><br>
+                    </div>
+                  </div>
+                    <div class="row">
+                    <input  class="button" id="button" type="submit" value="Convert to cm">
+                    <button class="button" onclick="clearall()">Clear</button>
+                    </div>
+                    <div>
+                      <h2 id="results">
+                      </h2>
+                    </div>
+                </form>
+                <script src="height.js"></script>
+              </div>
+        </div>
+
+      </div>
+</div>
+</body>
+</html>
